@@ -1,0 +1,14 @@
+@use '../util' as *;
+
+.contact {
+    line-height: rem(100);
+    display: flex;
+    justify-content: center;
+
+    .client-application {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+}

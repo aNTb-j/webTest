@@ -1,0 +1,82 @@
+@use '../util' as *;
+
+#contact-form {
+    max-width: rem(800);
+    margin: 0 auto;
+    padding: rem(40);
+
+    display: grid;
+    gap: rem(24);
+
+    background-color: var(--background);
+    border: rem(2) solid var(--text1);
+    border-radius: rem(0);
+    box-shadow: 8px 8px 0px 0px var(--accent);
+
+    font-family: "Space Grotesc", monospace;
+    font-size: rem(18);
+    font-weight: bold;
+
+    .form-row {
+        margin-bottom: rem(8);
+    }
+
+    .form-group {
+        margin-top: rem(8);
+    }
+
+    input,
+    textarea {
+        width: 100%;
+        padding: rem(16);
+        margin-top: rem(4);
+        margin-bottom: rem(8);
+        background-color: transparent;
+        color: var(--text2);
+
+        border: rem(2) solid var(--text1);
+        border-radius: rem(0);
+
+        font-size: rem(16);
+        font-family: inherit;
+
+        transition: .2s ease;
+
+        font-size: 18px;
+        
+
+
+        border-radius: 0;
+        outline: none;
+        transition: all 0.3s ease;
+        box-shadow: 8px 8px 0 var(--accent);
+
+
+        &::placeholder {
+            color: var(--text1);
+            opacity: .6;
+        }
+
+        &:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 rem(10) var(--accent);
+        }
+    }
+
+
+
+    textarea {
+        min-height: rem(180);
+        resize: vertical;
+    }
+
+    button {
+        margin-top: rem(50);
+        margin-left: rem(50);
+        margin-right: rem(50);
+        line-height: 4.2;
+        background-color: transparent;
+        border: rem(0) solid var(--text1);
+    }
+}
