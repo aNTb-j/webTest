@@ -83,7 +83,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--font-intern);
+  font-family: var(--font-primary);
 }
 
 h1, h2, h3 {
@@ -361,7 +361,7 @@ a, a:visited, a:active {
   border: 0.125rem solid var(--text1);
   border-radius: 0rem;
   box-shadow: 8px 8px 0px 0px var(--accent);
-  font-family: "Space Grotesc", monospace;
+  font-family: var(--font-primary), sans-serif;
   font-size: 1.125rem;
   font-weight: bold;
 }

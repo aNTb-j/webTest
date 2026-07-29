@@ -7,7 +7,7 @@ form.addEventListener("submit", async (e) => {
     const data = {
         name: form.name.value,
         email: form.email.value,
-        message: form.message.value
+        message: form.description.value
     };
 
     await fetch("https://tu-api.com/contact", {
