@@ -1,4 +1,4 @@
-import { initThemeToggle } from "./components/toggle.js";
+import { initThemeToggle } from "toggle.js";
 
 initThemeToggle();
 
