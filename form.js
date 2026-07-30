@@ -25,7 +25,7 @@ form.addEventListener("submit", async (event) => {
             },
             body: JSON.stringify(data)
         });
-
+        console.log("Response from server:", response);
         if (!response.ok) {
             throw new Error("No se pudo enviar el formulario.");
         }
