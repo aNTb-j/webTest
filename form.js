@@ -1,5 +1,3 @@
-import { Resend } from "resend";
-
 const form = document.querySelector("#contact-form");
 const submitButton = document.querySelector("#application-button");
 
