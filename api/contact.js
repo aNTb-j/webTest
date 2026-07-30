@@ -2,10 +2,8 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-
-
 export default async function handler(req, res) {
-     // Log the API key to verify it's being read correctly
+    // Log the API key to verify it's being read correctly
     console.log("Resend API Key:", process.env.RESEND_API_KEY);
     if (req.method !== "POST") {
         return res.status(405).json({
@@ -29,7 +27,7 @@ export default async function handler(req, res) {
 
             from: "Formulario <onboarding@resend.dev>",
 
-            to: "tu_mail@gmail.com",
+            to: "comercializacion.joaquin.lopez@gmail.com",
 
             subject: "Nuevo contacto",
 
@@ -58,7 +56,8 @@ export default async function handler(req, res) {
         console.error(error);
 
         return res.status(500).json({
-            success: false
+            success: false,
+            error: error.message
         });
 
     }
