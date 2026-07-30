@@ -2,10 +2,11 @@ import { Resend } from "resend";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-console.log("Resend API Key:", process.env.RESEND_API_KEY); // Log the API key to verify it's being read correctly
+
 
 export default async function handler(req, res) {
-
+     // Log the API key to verify it's being read correctly
+    console.log("Resend API Key:", process.env.RESEND_API_KEY);
     if (req.method !== "POST") {
         return res.status(405).json({
             message: "Method Not Allowed"
