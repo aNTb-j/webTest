@@ -3,6 +3,16 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.RESEND_API_KEY);
 
 export default async function handler(req, res) {
+
+    
+    console.log("La función se ejecutó");
+
+        return res.status(200).json({
+            success: true,
+            message: "API funcionando"
+        });
+
+
     // Log the API key to verify it's being read correctly
     console.log("Resend API Key:", process.env.RESEND_API_KEY);
     if (req.method !== "POST") {
