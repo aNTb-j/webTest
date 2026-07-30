@@ -27,6 +27,7 @@ form.addEventListener("submit", async (event) => {
         });
         console.log("Response from server:", response);
         if (!response.ok) {
+            console.log("Response from server:", response);
             throw new Error("No se pudo enviar el formulario.");
         }
 
