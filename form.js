@@ -1,3 +1,5 @@
+import { Resend } from "resend";
+
 const form = document.querySelector("#contact-form");
 const submitButton = document.querySelector("#application-button");
 
@@ -18,7 +20,7 @@ form.addEventListener("submit", async (event) => {
     submitButton.textContent = "Enviando...";
 
     try {
-        const response = await fetch("/contact", {
+        const response = await fetch("/api/contact", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
