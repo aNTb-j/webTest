@@ -26,7 +26,7 @@ export default async function handler(req, res) {
 
             from: "Formulario <onboarding@resend.dev>",
 
-            to: "tu_mail@gmail.com",
+            to: "comercializacion.joaquin.lopez@gmail.com",
 
             subject: "Nuevo contacto",
 
