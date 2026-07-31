@@ -1,3 +1,5 @@
 /node_modules
 /.env
 /scss
+
+package-lock.json
