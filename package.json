@@ -1,5 +1,4 @@
 {
-  "main": "index.html",
   "scripts": {
     "sass": "sass --watch scss/style.scss:public/css/style.css"
   },
