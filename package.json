@@ -1,5 +1,9 @@
 {
+  "scripts": {
+    "sass": "sass --watch scss/style.scss:public/css/style.css"
+  },
   "dependencies": {
-    "resend": "^6.18.1"
+    "resend": "^6.18.1",
+    "sass": "^1.102.0"
   }
 }
