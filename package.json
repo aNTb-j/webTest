@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "sass": "sass --watch scss/style.scss:public/css/style.css"
+    "sass": "sass --watch scss/style.scss:styles/css/style.css"
   },
   "dependencies": {
     "resend": "6.18.1",

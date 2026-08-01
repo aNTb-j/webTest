@@ -37,6 +37,8 @@
   --crt-light-green: hsla(120, 100%, 45%, .008);
   --crt-light-blue: hsla(220, 100%, 55%, .010);
   --crt-light-glow: hsla(77, 95%, 56%, .08);
+  --vivid-color: hsl(87, 100%, 50%);
+  --vivid-color-contrast: hsl(111, 100%, 12%);
 }
 
 :root {
@@ -53,6 +55,7 @@
   --crt-green: var(--crt-light-green);
   --crt-blue: var(--crt-light-blue);
   --crt-glow: var(--crt-light-glow);
+  --v-color:var(--vivid-color-contrast) ;
 }
 
 [data-theme=dark] {
@@ -69,6 +72,7 @@
   --crt-green: var(--crt-dark-green);
   --crt-blue: var(--crt-dark-blue);
   --crt-glow: var(--crt-dark-glow);
+  --v-color:var(--vivid-color) ;
 }
 
 body {
@@ -77,9 +81,7 @@ body {
   color: var(--text2);
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: var(--font-title);
 }
 
@@ -87,6 +89,21 @@ code,
 pre,
 .hero-animation {
   font-family: var(--font-mono);
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.offer {
+  padding-bottom: 18.75rem;
 }
 
 .container {
@@ -110,6 +127,10 @@ pre,
     padding: 0.3125rem;
   }
 }
+.section-title {
+  font-size: clamp(1.875rem, 8vw, 3.625rem);
+}
+
 .header {
   position: sticky;
   top: 0;
@@ -392,14 +413,22 @@ pre,
   pointer-events: none;
 }
 
+.hero-network {
+  margin-top: 6.25rem;
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .hero-animation {
-  margin-top: 10%;
   text-align: center;
   margin-bottom: 10%;
+  padding-bottom: 20.3125rem;
 }
 
 .hero-animation h1 {
-  font-size: clamp(1.875rem, 8vw, 5.625rem);
+  font-size: clamp(4.875rem, 8vw, 10.625rem);
   font-weight: 700;
   margin: 0;
 }
@@ -537,24 +566,6 @@ pre,
 
 #application-button:hover #application-button-span {
   color: var(--background);
-}
-
-body {
-  background: var(--background);
-  font-family: var(--font-primary);
-  color: var(--text2);
-}
-
-h1,
-h2,
-h3 {
-  font-family: var(--font-title);
-}
-
-code,
-pre,
-.hero-animation {
-  font-family: var(--font-mono);
 }
 
 /*# sourceMappingURL=style.css.map */
